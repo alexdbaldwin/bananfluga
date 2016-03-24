@@ -8,7 +8,7 @@ public class BallMovementScript : MonoBehaviour
 
     Rigidbody rigidBody;
     public int Index = 0;
-    public bool UseGamepad = false;
+    public bool UseGamepad = false; 
 
     // Use this for initialization
     void Start()
