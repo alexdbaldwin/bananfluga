@@ -1,25 +1,28 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class LinkBehaviour : MonoBehaviour {
+public class LinkBehaviour : MonoBehaviour
+{
 
     public GameObject obj0;
     public GameObject obj1;
     public float MinDistance = 5f;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
 
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         var start = obj0.transform.position;
         var end = obj1.transform.position;
         var offset = end - start;
 
-        if(offset.sqrMagnitude > MinDistance * MinDistance)
+        if (offset.sqrMagnitude > MinDistance * MinDistance)
         {
             GetComponent<MeshRenderer>().enabled = false;
             return;
@@ -31,5 +34,15 @@ public class LinkBehaviour : MonoBehaviour {
         transform.position = newPosition;
         transform.up = offset;
         transform.localScale = scale;
-	}
+
+        RaycastHit rayCastHit = new RaycastHit();
+        if (Physics.Raycast(start, offset, out rayCastHit, offset.magnitude))
+        {
+            var gameObj = rayCastHit.transform.gameObject;
+            if (gameObj.tag == "Enemy")
+            {
+                Destroy(gameObj);
+            }
+        }
+    }
 }
