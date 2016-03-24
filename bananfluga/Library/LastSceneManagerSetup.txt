@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Enemies.unity
+- path: Assets/slurp.unity
   isLoaded: 1
   isActive: 1
