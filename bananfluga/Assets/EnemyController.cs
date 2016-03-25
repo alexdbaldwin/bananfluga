@@ -10,7 +10,7 @@ public class EnemyController : MonoBehaviour {
     }
 
     Rigidbody rigidBody;
-    CapsuleCollider capsuleCollider;
+    BoxCollider boxCollider;
     AIState currentState = AIState.Wander;
     Vector3 targetLocation;
     float timeUntilChangeTarget = 0.0f;
@@ -23,7 +23,7 @@ public class EnemyController : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         rigidBody = GetComponent<Rigidbody>();
-        capsuleCollider = GetComponent<CapsuleCollider>();
+        boxCollider = GetComponent<BoxCollider>();
     }
 
         //if ((Mathf.Abs(input.x) > float.Epsilon || Mathf.Abs(input.y) > float.Epsilon) && (advancedSettings.airControl || m_IsGrounded))
@@ -101,7 +101,7 @@ public class EnemyController : MonoBehaviour {
     }
 
     void SizeUp() {
-        transform.position += new Vector3(0,capsuleCollider.bounds.size.y/2.0f, 0);
+        transform.position += new Vector3(0, boxCollider.bounds.size.y/2.0f, 0);
         transform.localScale = transform.localScale * 2.0f;
         targetLocation.y = transform.position.y;
 
