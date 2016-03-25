@@ -21,18 +21,9 @@ public class BallMovementScript : MonoBehaviour
     {
         var maxForce = 10;
         var movement = UseGamepad ?
-            new GamepadMovement().GetMovement(Index) : 
+            new GamepadMovement().GetMovement(Index) :
             new KeyboardMovement().GetMovement(Index);
 
-        rigidBody.AddForce(movement.x * maxForce, 0,  movement.y * maxForce);
-
-        //if (Input.GetKey(KeyCode.W))
-        //    rigidBody.AddForce(new Vector3(0, 0, maxForce));
-        //if (Input.GetKey(KeyCode.S))
-        //    rigidBody.AddForce(new Vector3(0, 0, -maxForce));
-        //if (Input.GetKey(KeyCode.A))
-        //    rigidBody.AddForce(new Vector3(-maxForce, 0, 0));
-        //if (Input.GetKey(KeyCode.D))
-        //    rigidBody.AddForce(new Vector3(maxForce, 0, 0));
+        rigidBody.AddForce(movement.x * maxForce, 0, movement.y * maxForce);
     }
 }

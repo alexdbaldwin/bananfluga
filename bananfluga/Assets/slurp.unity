@@ -159,14 +159,20 @@ Transform:
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 9
 --- !u!1001 &15705090
+=======
+  m_RootOrder: 5
+--- !u!1001 &344529518
+>>>>>>> Stashed changes
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 472210, guid: bb6a7f64e6b56b3409c538261501a716, type: 2}
       propertyPath: m_LocalPosition.x
       value: -3.0988
@@ -201,6 +207,46 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb6a7f64e6b56b3409c538261501a716, type: 2}
+=======
+    - target: {fileID: 426142, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -2.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 426142, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 9.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 426142, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -10.81
+      objectReference: {fileID: 0}
+    - target: {fileID: 426142, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 426142, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426142, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 426142, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071067
+      objectReference: {fileID: 0}
+    - target: {fileID: 426142, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 11449352, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+      propertyPath: ground
+      value: 
+      objectReference: {fileID: 1504564446}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: b2b50533c93e3f84ba9c08b524f8abdb, type: 2}
+>>>>>>> Stashed changes
   m_IsPrefabParent: 0
 --- !u!1 &486916111
 GameObject:
@@ -548,6 +594,7 @@ Transform:
   m_LocalScale: {x: 2, y: 1, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< Updated upstream
   m_RootOrder: 10
 --- !u!1 &1144878585
 GameObject:
@@ -738,6 +785,9 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 857ff22b2974cee4b9935c99b1d519ce, type: 3}
   m_IsPrefabParent: 0
+=======
+  m_RootOrder: 6
+>>>>>>> Stashed changes
 --- !u!1 &1504564446
 GameObject:
   m_ObjectHideFlags: 0
