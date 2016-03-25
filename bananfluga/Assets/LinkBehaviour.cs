@@ -36,12 +36,16 @@ public class LinkBehaviour : MonoBehaviour
         transform.localScale = scale;
 
         RaycastHit rayCastHit = new RaycastHit();
-        if (Physics.Raycast(start, offset, out rayCastHit, offset.magnitude))
+        if (Physics.SphereCast(start, obj0.transform.localScale.x / 2,offset, out rayCastHit, offset.magnitude))
         {
             var gameObj = rayCastHit.transform.gameObject;
             if (gameObj.tag == "Enemy")
             {
                 Destroy(gameObj);
+                obj0.transform.localScale = obj0.transform.localScale * 1.10f;
+                obj1.transform.localScale = obj1.transform.localScale * 1.10f;
+                MinDistance *= 2;
+                GetComponent<CapsuleCollider>().radius *= 2;    
             }
         }
     }
